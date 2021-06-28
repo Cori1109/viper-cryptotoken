@@ -21,12 +21,12 @@ async function main() {
 
   // console.log("TokenERC721Full deployed to:", tokenERC721Full.address);
 
-  const NFT = await hre.ethers.getContractFactory("NFT");
-  const nft = await NFT.deploy();
+  const ViperToken = await hre.ethers.getContractFactory("ViperToken");
+  const viperToken = await ViperToken.deploy();
 
-  await nft.deployed();
+  await viperToken.deployed();
 
-  console.log("nudevNFT deployed to:", nft.address);
+  console.log("ViperToken deployed to:", viperToken.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
